@@ -9,12 +9,11 @@ import random
 
 def smallest(num_list):
     # This function determines the smallest number out of the list.
+    smallest_num = num_list[0]
+
     for num in num_list:
-        if num_list.index(num) == 0:
+        if smallest_num > num:
             smallest_num = num
-        else:
-            if smallest_num > num:
-                smallest_num = num
 
     return smallest_num
 
